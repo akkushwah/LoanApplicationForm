@@ -32,6 +32,6 @@ form.addEventListener('submit', (e) => {
   let eMail = document.querySelector('#email').value;
   localStorage.setItem('Fullname', fullName);
   localStorage.setItem('Email', eMail);
-  window.location.href = "Confirmation.html"
+  window.location.href = "confirmation.html"
 });
 
