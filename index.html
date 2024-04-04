@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form class="myForm">
+      <h2>Bank Loan Application Form</h2>
+      <div class="note">
+        Kindly enter the correct information in the Loan Appliaction Form.
+      </div>
+      <p>
+        <input type="text" id="fname" name="fname" placeholder="Enter Your Full Name" pattern="[a-zA-Z]+( [a-zA-Z]+)*"
+          required>
+      </p>
+      <p>
+        <input type="email" id="email" placeholder="Enter Your Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+      </p>
+
+      <p>
+        <input type="text" id="pan" placeholder="Enter Your PAN Number" pattern="^[A-Za-z]{5}\d{4}[A-Za-z]{1}$"
+          required>
+      </p>
+
+      <p>
+        <input type=" text" id="amount" placeholder="Enter Loan Amount (in Rs:)" required>
+      </p>
+      <p>
+        <input type="text" id="tYear" placeholder="Loan Tenure (Year)" required>
+      </p>
+
+      <button class="calculate" id="calculate-emi"> Calculate EMI</button>
+
+      <p class="emi-para"></p>
+
+      <button type="submit" class="btn">Submit</button>
+      <button type="reset" class="btn">Reset</button>
+
+    </form>
+
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
